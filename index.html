@@ -10,6 +10,37 @@
 </head>
 
 <body>
+  
+  <div id="myModal" class="modal">
+    <div class="modal-content">
+      <h2 class="modal-content__header">Личный кабинет</h2>
+      <p class="modal-content__text">
+        Введите свой логин и пароль, чтобы войти
+      </p>
+      <form>
+        <label class="form-input">
+          <input class="form-input__login modal-content__login" type="text" name="login" placeholder="Логин" required />
+        </label>
+        <label for="password" class="form-input">
+          <input class="form-input__password modal-content__password" type="password" name="password" id="password"
+            placeholder="Пароль" required />
+        </label>
+        <label for="check" class="form-check">
+          <input type="checkbox" id="check" class="check-input" />
+          <span class="form-input__check"></span>
+          Запомните меня
+        </label>
+        <a href="#" class="modal-content__foggot">Я забыл пароль!</a>
+        <label for="form-submit">
+          <input type="submit" class="button form-submit__button" value="Войти" />
+        </label>
+        <button id="close-modal" class="modal-content__close button">
+          Выйти
+        </button>
+      </form>
+    </div>
+  </div>
+  
   <header class="page-header">
     <div class="page-header__logo">
       <a>
@@ -195,35 +226,7 @@
     </section>
   </footer>
 
-  <div id="myModal" class="modal">
-    <div class="modal-content">
-      <h2 class="modal-content__header">Личный кабинет</h2>
-      <p class="modal-content__text">
-        Введите свой логин и пароль, чтобы войти
-      </p>
-      <form>
-        <label class="form-input">
-          <input class="form-input__login modal-content__login" type="text" name="login" placeholder="Логин" required />
-        </label>
-        <label for="password" class="form-input">
-          <input class="form-input__password modal-content__password" type="password" name="password" id="password"
-            placeholder="Пароль" required />
-        </label>
-        <label for="check" class="form-check">
-          <input type="checkbox" id="check" class="check-input" />
-          <span class="form-input__check"></span>
-          Запомните меня
-        </label>
-        <a href="#" class="modal-content__foggot">Я забыл пароль!</a>
-        <label for="form-submit">
-          <input type="submit" class="button form-submit__button" value="Войти" />
-        </label>
-        <button id="close-modal" class="modal-content__close button">
-          Выйти
-        </button>
-      </form>
-    </div>
-  </div>
+  
 </body>
 <script src="script/main.js"></script>
 
