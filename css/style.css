@@ -1313,7 +1313,7 @@ img {
   display: none;
   position: fixed;
   padding-top: 135px;
-  z-index: 50;
+  z-index: 150;
   left: 0;
   top: 0;
   width: 100%;
