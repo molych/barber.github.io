@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="css/style.css" />
+  <title>Home page</title>
+</head>
+
+<body>
+  <header class="page-header">
+    <div class="page-header__logo">
+      <a>
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/logotype-desktop.svg" />
+          <source media="(min-width:768px)" srcset="img/logotype-tablet.svg" />
+          <img class="page-header__logo-image" src="img/logotype-mobile.svg" width="226" height="30"
+            alt="Барбершоп «Бородинский»" />
+        </picture>
+      </a>
+    </div>
+    <nav class="main-nav main-nav--closed main-nav--nojs">
+      <button class="main-nav__toggle" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list site-list">
+          <li class="list-item list-item--active"><a>Главная</a></li>
+          <li class="list-item ">
+            <a href="photo.html">Наши работы</a>
+          </li>
+          <li class="list-item ">
+            <a href="form.html">Записаться</a>
+          </li>
+          <li class="list-item ">
+            <a href="#">Контакты</a>
+          </li>
+        </ul>
+        <ul class="main-nav__list site-user">
+          <li class="list-user">
+            <a href="#" id="open-modal">
+              <svg class="enter-icon" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17px" height="17px"
+                viewBox="0 0 95.667 95.667" style="enable-background:new 0 0 95.667 95.667;" xml:space="preserve">
+                <g>
+                  <g>
+                    <path
+                      d="M39.173,72.344l39.447-22.777c0.619-0.356,1-1.018,1-1.731s-0.381-1.375-1-1.732L39.173,23.324
+                			c-0.619-0.357-1.381-0.357-2,0c-0.619,0.357-1,1.018-1,1.732v10.605H2.121c-1.104,0-2,0.896-2,2v20.344c0,1.104,0.896,2,2,2
+                			h34.053v10.604c0,0.716,0.381,1.375,1,1.732c0.31,0.18,0.655,0.268,1,0.268C38.519,72.609,38.864,72.521,39.173,72.344z" />
+                    <path d="M80.775,0H40.026c-1.104,0-2,0.896-2,2v6c0,1.104,0.896,2,2,2h40.749c2.632,0,4.771,2.141,4.771,4.771v66.125
+                			c0,2.631-2.141,4.771-4.771,4.771H40.026c-1.104,0-2,0.896-2,2v6c0,1.104,0.896,2,2,2h40.749c8.146,0,14.771-6.627,14.771-14.771
+                			V14.772C95.546,6.627,88.92,0,80.775,0z" />
+                  </g>
+                </g>
+              </svg>
+
+              Войти</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <section class="stats">
+    <header class="stats__header">
+      <h2 class="visually-hidden">Статистика Барбершопа</h2>
+      <b class="stats__slogan">Стижка у нас <br />это выгодно!</b>
+      <p class="stats__intro">
+        Мужская стрижка требует точного подхода. Обратимся к статистике:
+      </p>
+      <small class="stats__legend">
+        <sup>*</sup>- приведенные данные ложь
+      </small>
+    </header>
+    <table class="stats__list">
+      <tr>
+        <td class="stats__value">1500</td>
+        <td class="stats__field">Рублей<br>вложений</td>
+      </tr>
+      <tr>
+        <td class="stats__value">7200</td>
+        <td class="stats__field">Секунд<br>времени мастера</td>
+      </tr>
+      <tr>
+        <td class="stats__value">90 000</td>
+        <td class="stats__field">Постриженных<br>волос</td>
+      </tr>
+      <tr>
+        <td class="stats__value">500 000</td>
+        <td class="stats__field">Лайков и<br>комплиментов</td>
+      </tr>
+    </table>
+  </section>
+
+  <div class="advanteg__wrapper">
+    <section class="advanteg">
+      <h2 class="visually-hidden">Преимущества барбершопа</h2>
+      <div class="advanteg__item advanteg__item--visualy">
+        <img class="advanteg-pic" src="img/advanteg-1.svg" width="100" height="100" alt="Быстро" />
+        <b class="advanteg-header">Быстро</b>
+        <p class="=advanteg-text">
+          Мы делаем свою работу быстро! Два часа пролетят незаметно и вы —
+          счастливый обладатель
+        </p>
+      </div>
+      <div class="advanteg__item">
+        <img class="advanteg-pic" src="img/advanteg-2.svg" width="100" height="100" alt="Круто" />
+        <b class="advanteg-header">Круто</b>
+        <p class="=advanteg-text">
+          будьте, как вы стриглись раньше. Мы сделаем из вас звезду футбола
+          или кино. Во всяком случае внешне.
+        </p>
+      </div>
+      <div class="advanteg__item">
+        <img class="advanteg-pic" src="img/advanteg-3.svg" width="100" height="100" alt="Дорого" />
+        <b class="advanteg-header">Дорого</b>
+        <p class="=advanteg-text">
+          Наши мастера — профессионалы своего делаи не могут стоить дёшево. К
+          тому же, разве
+        </p>
+      </div>
+    </section>
+  </div>
+  <div class="news-wrapper">
+    <section class="news">
+      <h2 class="news__header">Новости и акции</h2>
+      <button class="button button-news">показать все</button>
+      <article class="news-item">
+        <span class="news-item__date">29 <br /><span class="news-item__month">сент</span></span>
+        <a href="#" class="news-item__link">Нам наконец завезли Ягермайстер! Теперь вы можете пропусить
+          стаканчик во время стижки.</a>
+      </article>
+      <article class="news-item">
+        <span class="news-item__date">19 <br /><span class="news-item__month">сент</span>
+        </span>
+        <a href="#" class="news-item__link">В нашей команде пополнение, Борис «Бритва» Стригунец, пополнил наши
+          стройные ряды. Спешите записаться!</a>
+      </article>
+      <article class="news-item news-item--close-mob  news-item--close-laptop">
+        <span class="news-item__date">9 <br /><span class="news-item__month">сент</span>
+        </span>
+        <a href="#" class="news-item__link">Все дорожает, а наши стрижки нет! Как так? Приходите, постригитесь
+          и узнаете, в чем здесь подвох!</a>
+      </article>
+    </section>
+  </div>
+
+  <div class="reviews-wrapper">
+    <section class="reviews">
+      <h2 class="reviews-header">Отзывы о нас</h2>
+      <button class="button button-revievs">Оставить свой</button>
+      <button class="button-slide button-slide--left">
+        <span class="visually-hidden">Влево</span>
+        <span class="button-slide__left-corner"></span>
+      </button>
+      <div class="reviews-content">
+        <img src="img/Layer-32.jpg" width="50" alt="layer" />
+        <div class="reviews-content__block">
+          <p class="reviews-content__name">Трэвис Баркер</p>
+          <p class="reviews-content__text">
+            Спасибо за лысину! Был проездом в Москве, заскочил побриться,
+            чтобы было видно новую татуировку!
+          </p>
+        </div>
+      </div>
+      <button class="button-slide button-slide--right">
+        <span class="visually-hidden">Вправо</span>
+        <span class="button-slide__right-corner"></span>
+      </button>
+    </section>
+  </div>
+
+  <footer class="footer">
+    <section class="footer-adress">
+      <h4 class="footer-adress__header">Барбершоп Бородинский</h4>
+      <p class="footer-adress__street">
+        г. Санкт-Петербург, ул. Большая Конюшенная 19/8<br /><a href="#">Тел.: +7 (812) 555-66-66</a>
+      </p>
+    </section>
+    <section class="footer-socmedia">
+      <ul>
+        <li class="footer-socmedia__item">
+          <a href="#"><img src="img/facebook-logo.svg" alt="" width="50" height="50" /></a>
+        </li>
+        <li class="footer-socmedia__item">
+          <a href="#"><img src="img/twitter.svg" alt="" width="50" height="50" /></a>
+        </li>
+        <li class="footer-socmedia__item">
+          <a href="#"><img src="img/instagram.svg" alt="" width="50" height="50" /></a>
+        </li>
+      </ul>
+    </section>
+  </footer>
+
+  <div id="myModal" class="modal">
+    <div class="modal-content">
+      <h2 class="modal-content__header">Личный кабинет</h2>
+      <p class="modal-content__text">
+        Введите свой логин и пароль, чтобы войти
+      </p>
+      <form>
+        <label class="form-input">
+          <input class="form-input__login modal-content__login" type="text" name="login" placeholder="Логин" required />
+        </label>
+        <label for="password" class="form-input">
+          <input class="form-input__password modal-content__password" type="password" name="password" id="password"
+            placeholder="Пароль" required />
+        </label>
+        <label for="check" class="form-check">
+          <input type="checkbox" id="check" class="check-input" />
+          <span class="form-input__check"></span>
+          Запомните меня
+        </label>
+        <a href="#" class="modal-content__foggot">Я забыл пароль!</a>
+        <label for="form-submit">
+          <input type="submit" class="button form-submit__button" value="Войти" />
+        </label>
+        <button id="close-modal" class="modal-content__close button">
+          Выйти
+        </button>
+      </form>
+    </div>
+  </div>
+</body>
+<script src="script/main.js"></script>
+
+</html>

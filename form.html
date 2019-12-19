@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Form</title>
+</head>
+
+<body>
+    <header class="page-header">
+        <div class="page-header__logo">
+            <a>
+                <picture>
+                    <source media="(min-width: 1200px)" srcset="img/logotype-desktop.svg" />
+                    <source media="(min-width:768px)" srcset="img/logotype-tablet.svg" />
+                    <img class="page-header__logo-image" src="img/logotype-mobile.svg" width="226" height="30"
+                        alt="Барбершоп «Бородинский»" />
+                </picture>
+            </a>
+        </div>
+        <nav class="main-nav main-nav--closed main-nav--nojs">
+            <button class="main-nav__toggle" type="button">
+                <span class="visually-hidden">Открыть меню</span>
+            </button>
+            <div class="main-nav__wrapper">
+                <ul class="main-nav__list site-list">
+                    <li class="list-item ">
+                        <a href="index.html">Главная</a></li>
+                    <li class="list-item ">
+                        <a href="photo.html">Наши работы</a>
+                    </li>
+                    <li class="list-item list-item--active">
+                        <a>Записаться</a>
+                    </li>
+                    <li class="list-item ">
+                        <a href="#">Контакты</a>
+                    </li>
+                </ul>
+                <ul class="main-nav__list site-user">
+                    <li class="list-user">
+                        <a href="#" id="open-modal">
+                            <svg class="enter-icon" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17px" height="17px"
+                                viewBox="0 0 95.667 95.667" style="enable-background:new 0 0 95.667 95.667;"
+                                xml:space="preserve">
+                                <g>
+                                    <g>
+                                        <path
+                                            d="M39.173,72.344l39.447-22.777c0.619-0.356,1-1.018,1-1.731s-0.381-1.375-1-1.732L39.173,23.324
+                			c-0.619-0.357-1.381-0.357-2,0c-0.619,0.357-1,1.018-1,1.732v10.605H2.121c-1.104,0-2,0.896-2,2v20.344c0,1.104,0.896,2,2,2
+                			h34.053v10.604c0,0.716,0.381,1.375,1,1.732c0.31,0.18,0.655,0.268,1,0.268C38.519,72.609,38.864,72.521,39.173,72.344z" />
+                                        <path d="M80.775,0H40.026c-1.104,0-2,0.896-2,2v6c0,1.104,0.896,2,2,2h40.749c2.632,0,4.771,2.141,4.771,4.771v66.125
+                			c0,2.631-2.141,4.771-4.771,4.771H40.026c-1.104,0-2,0.896-2,2v6c0,1.104,0.896,2,2,2h40.749c8.146,0,14.771-6.627,14.771-14.771
+                			V14.772C95.546,6.627,88.92,0,80.775,0z" />
+                                    </g>
+                                </g>
+                            </svg>
+
+                            Войти</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+
+    <div class="page__wrapper">
+        <section class="main-form">
+            <h2 class="main-form__header">Запись на стрижку</h2>
+            <form action="#" method="post">
+                <fieldset class="field-name">
+                    <legend class="visually-hidden">Имя</legend>
+                    <label>
+                        <input class="main-form__name" type="text" name="name-first" placeholder="Фамилия" required>
+                    </label>
+                    <label>
+                        <input class="main-form__name" type="text" name="name-second" placeholder="Имя" required>
+                    </label>
+                    <label>
+                        <input class="main-form__name" type="text" name="name-third" placeholder="Отчество" required>
+                    </label>
+                </fieldset>
+                <fieldset class="field-contacts">
+                    <legend class="visually-hidden">Адресс</legend>
+                    <label>
+                        <input class="main-form__contacts" type="tel" name="tel" placeholder="Контактный телефон"
+                            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                    </label>
+                    <label>
+                        <input class="main-form__contacts" type="email" placeholder="Контактный e-mail" required>
+                    </label>
+                </fieldset>
+                <fieldset class="field-info">
+                    <legend class="visually-hidden">Доп информация</legend>
+                    <label>
+                        <textarea class="field-info__area" name="infoMaster"
+                            rows="5">Доп. информация для мастера</textarea>
+                    </label>
+                </fieldset>
+
+                <h2 class="beard-choice">Выберите модель бороды:</h2>
+                <fieldset class="field-beard">
+                    <legend class="visually-hidden">Борода</legend>
+                    <label class="beard">
+                        <input type="radio" class="radio-input" name="name1">
+                        <span class="beard__radio"></span><br>адмирал
+                        <img src="img/beard-1.svg" alt="beard-1" class="beard-img">
+                    </label>
+                    <label class="beard">
+                        <input type="radio" class="radio-input" name="name1">
+                        <span class="beard__radio"></span><br>
+                        лесоруб
+                        <img src="img/beard-2.svg" alt="beard-2" class="beard-img">
+                    </label>
+                    <label class="beard">
+                        <input type="radio" class="radio-input" name="name1">
+                        <span class="beard__radio"></span><br>
+                        полярник
+                        <img src="img/beard-3.svg" alt="beard-3" class="beard-img">
+                    </label>
+                    <label class="beard">
+                        <input type="radio" class="radio-input" name="name1">
+                        <span class="beard__radio"></span><br>
+                        боярин
+                        <img src="img/beard-4.svg" alt="beard-4" class="beard-img">
+                    </label>
+                    <label class="beard">
+                        <input type="radio" class="radio-input" name="name1">
+                        <span class="beard__radio"></span><br>
+                        медведь
+                        <img src="img/beard-5.svg" alt="beard-5" class="beard-img">
+                    </label>
+                </fieldset>
+
+                <h2 class="options-choice">Дополнительные услуги:</h2>
+                <fieldset class="field-options">
+                    <legend class="visually-hidden">Дополнительные услуги</legend>
+                    <label class="main-form__check">
+                        <input type="checkbox" class="check-input">
+                        <span class="form-input__check main-input__check"></span>
+                        Подкрасить бороду
+                    </label>
+                    <label class="main-form__check">
+                        <input type="checkbox" class="check-input">
+                        <span class="form-input__check main-input__check"></span>
+                        Накрутить усы
+                    </label>
+                    <label class="main-form__check">
+                        <input type="checkbox" class="check-input">
+                        <span class="form-input__check main-input__check"></span>
+                        Причесать бороду
+                    </label>
+                    <label class="main-form__check">
+                        <input type="checkbox" class="check-input">
+                        <span class="form-input__check main-input__check"></span>
+                        Подровнять виски
+                    </label>
+                    <label class="main-form__check">
+                        <input type="checkbox" class="check-input">
+                        <span class="form-input__check main-input__check"></span>
+                        Убрать седину
+                    </label>
+                    <label class="main-form__check">
+                        <input type="checkbox" class="check-input">
+                        <span class="form-input__check main-input__check"></span>
+                        Отпалировать лысину
+                    </label>
+                    <input type="submit" class="button main-submit__button" value="Отправить заявку" />
+                </fieldset>
+            </form>
+        </section>
+    </div>
+
+    <footer class="footer">
+        <section class="footer-adress">
+            <h4 class="footer-adress__header">Барбершоп Бородинский</h4>
+            <p class="footer-adress__street">
+                г. Санкт-Петербург, ул. Большая Конюшенная 19/8<br /><a href="#">Тел.: +7 (812) 555-66-66</a>
+            </p>
+        </section>
+        <section class="footer-socmedia">
+            <ul>
+                <li class="footer-socmedia__item">
+                    <a href="#"><img src="img/facebook-logo.svg" alt="" width="50" height="50" /></a>
+                </li>
+                <li class="footer-socmedia__item">
+                    <a href="#"><img src="img/twitter.svg" alt="" width="50" height="50" /></a>
+                </li>
+                <li class="footer-socmedia__item">
+                    <a href="#"><img src="img/instagram.svg" alt="" width="50" height="50" /></a>
+                </li>
+            </ul>
+        </section>
+    </footer>
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <h2 class="modal-content__header">Личный кабинет</h2>
+            <p class="modal-content__text">
+                Введите свой логин и пароль, чтобы войти
+            </p>
+            <form>
+                <label class="form-input">
+                    <input class="form-input__login modal-content__login" type="text" name="login" placeholder="Логин"
+                        required />
+                </label>
+                <label for="password" class="form-input">
+                    <input class="form-input__password modal-content__password" type="password" name="password"
+                        id="password" placeholder="Пароль" required />
+                </label>
+                <label for="check" class="form-check">
+                    <input type="checkbox" id="check" class="check-input" />
+                    <span class="form-input__check"></span>
+                    Запомните меня
+                </label>
+                <a href="#" class="modal-content__foggot">Я забыл пароль!</a>
+                <label for="form-submit">
+                    <input type="submit" class="button form-submit__button" value="Войти" />
+                </label>
+                <button id="close-modal" class="modal-content__close button">
+                    Выйти
+                </button>
+            </form>
+        </div>
+    </div>
+    <script src="script/main.js"></script>
+
+</body>
+
+</html>
